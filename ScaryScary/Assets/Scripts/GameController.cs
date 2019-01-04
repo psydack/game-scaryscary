@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GameController : MonoBehaviour {
@@ -54,7 +55,7 @@ public class GameController : MonoBehaviour {
 		
 		
 		if ( score >= totalScore ) 
-			Application.LoadLevel("GameOver");
+			SceneManager.LoadScene("GameOver");
 		
 		
 	}
